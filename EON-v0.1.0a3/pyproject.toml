@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlbricks-eon"
+version = "0.1.0a3"
+description = "EON architecture for MLBricks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name="Zameer Hussain"}, {name="Akhtar Hussain"}]
+dependencies = ["torch"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["mlbricks.eon*"]
+namespaces = true
